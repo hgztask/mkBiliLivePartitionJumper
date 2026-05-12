@@ -5,7 +5,7 @@ declare module "*.css" {
 }
 
 interface Window {
-    mk_win: Window,
+    mk_wins: any,
     parseUrl,
     addButton
 }

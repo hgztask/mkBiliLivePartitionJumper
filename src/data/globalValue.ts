@@ -1,5 +1,8 @@
-unsafeWindow.mk_win = window;
-
+if (unsafeWindow.mk_wins) {
+    unsafeWindow.mk_wins["mkBiliLivePartitionJumper"] = window;
+} else {
+    window.mk_wins = {mkBiliLivePartitionJumper: window}
+}
 export default {
     //加群链接_qq
     group_url: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=tFU0xLt1uO5u5CXI2ktQRLh_XGAHBl7C&authKey=KAf4rICQYjfYUi66WelJAGhYtbJLILVWumOm%2BO9nM5fNaaVuF9Iiw3dJoPsVRUak&noverify=0&group_code=876295632',

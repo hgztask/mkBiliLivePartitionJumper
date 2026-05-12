@@ -3,7 +3,7 @@
   "alias": "mkBiliLivePartitionJumper",
   "@namespace": "http://tampermonkey.net/",
   "@license": "Apache-2.0",
-  "@version": "1.0",
+  "@version": "1.1",
   "@author": "byhgz",
   "@description": "在直播间播放器右上角补充当前直播的分区信息和跳转按钮",
   "@icon": "https://static.hdslb.com/images/favicon.ico",
