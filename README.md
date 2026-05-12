@@ -1,4 +1,4 @@
-# 油猴脚本使用typeScript+vue2+rollup项目演示
+# 为B站直播间添加分区跳转按钮油猴脚本
 
 ## 项目介绍
 
@@ -62,22 +62,18 @@ npm run dev
 
 ```javascript
 // ==UserScript==
-// @name      mk-ts-vue2-rollup-demo
-// @namespace http://tampermonkey.net/
-// @license   Apache-2.0
-// @version   1.0
-// @author    byhgz
-// @icon      https://static.hdslb.com/images/favicon.ico
-// @noframes  
-// @run-at    document-start
-// @grant     GM_setValue
-// @grant     GM_getValue
-// @grant     GM_deleteValue
-// @grant     GM_addStyle
-// @grant     GM_registerMenuCommand
-// @match     *://localhost/*
-// @require   https://unpkg.com/vue@2.7.16/dist/vue.min.js
-// @require   https://unpkg.com/element-ui@2.15.14/lib/index.js
+// @name        为B站直播间添加分区跳转按钮
+// @namespace   http://tampermonkey.net/
+// @version     1.0
+// @description 在直播间播放器右上角补充当前直播的分区信息和跳转按钮
+// @author      byhgz
+// @icon        https://static.hdslb.com/images/favicon.ico
+// @license     Apache-2.0
+// @run-at      document-end
+// @match       *://live.bilibili.com/*
+// @exclude     https://live.bilibili.com/p*
+// @grant       GM_registerMenuCommand
+// @grant       GM_openInTab
 // @require     file://E:\js\dist\local_build.js
 // ==/UserScript==
 
@@ -87,8 +83,3 @@ npm run dev
  *
  */
 ```
-
-- 如果在localhost本地地址测试时，不需要其他脚本干扰，可以在对应脚本头部配置中添加
-- `@exclude   http://localhost:3002/`
-- 这里的端口可根据项目实际端口进行修改
-- 如需本地测试，将[rollup.config.js](rollup.config.js)配置中serve函数取消注释掉，并运行`npm run dev`
