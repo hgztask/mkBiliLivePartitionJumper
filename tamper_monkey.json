@@ -1,0 +1,24 @@
+{
+  "@name": "为B站直播间添加分区跳转按钮",
+  "alias": "mkBiliLivePartitionJumper",
+  "@namespace": "http://tampermonkey.net/",
+  "@license": "Apache-2.0",
+  "@version": "1.0",
+  "@author": "byhgz",
+  "@description": "在直播间播放器右上角补充当前直播的分区信息和跳转按钮",
+  "@icon": "https://static.hdslb.com/images/favicon.ico",
+  "noFrames": true,
+  "@run-at": "document-start",
+  "@grant": [
+    "GM_registerMenuCommand",
+    "GM_openInTab"
+  ],
+  "@exclude": [
+    "https://live.bilibili.com/p*"
+  ],
+  "@match": [
+    "*://live.bilibili.com/*"
+  ],
+  "@require": []
+}
+

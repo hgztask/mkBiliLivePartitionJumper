@@ -1,0 +1,20 @@
+{
+  "name": "mk-ts-vue2-rollup-demo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c --environment ROLLUP_ENV:production",
+    "watch:dev": "rollup -w -c"
+  },
+  "private": true,
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.2.0",
+    "@types/tampermonkey": "^5.0.5",
+    "esbuild": "^0.25.8",
+    "rollup": "^4.52.5",
+    "rollup-plugin-esbuild": "^6.2.1",
+    "rollup-plugin-import-content": "^1.1.0",
+    "typescript": "^5.9.3"
+  }
+}
