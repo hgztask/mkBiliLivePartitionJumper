@@ -25,6 +25,8 @@ function installLiveSectionButton(body: HTMLElement | any = document.body) {
             // @ts-ignore
             const vueData = headInfoVmDivEl['__vue__'];
             if (vueData === undefined) return;
+            const {liveAreaName=null} = vueData as any;
+            if (liveAreaName === null) return;
             clearInterval(i)
             resolve(vueData)
         }, 1000);
